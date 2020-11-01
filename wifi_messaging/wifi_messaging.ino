@@ -15,7 +15,7 @@ WiFiMulti wifiMulti;
 #define LED_BUILTIN 21
 
 WebServer server(80);
-U8G2_LD7032_60X32_F_4W_SW_SPI u8g2(U8G2_R2, /* clock=*/ 18, /* data=*/ 23, /* cs=*/ 5, /* dc=*/ 2, /* reset=*/ 19);  // SW SPI esp32
+U8G2_LD7032_60X32_F_4W_SW_SPI u8g2(U8G2_MIRROR, /* clock=*/ 18, /* data=*/ 23, /* cs=*/ 5, /* dc=*/ 2, /* reset=*/ 19);  // SW SPI esp32
 //Initialize message to display
 String message = "";
 
