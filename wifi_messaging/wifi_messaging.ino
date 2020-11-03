@@ -29,6 +29,7 @@ void setup()
   wifiMulti.addAP("Admiral Boom", "du kommst hier ned rein hahaha");
   wifiMulti.addAP("Pingu 1", "WG 3.OG li St0773r");
   wifiMulti.addAP("Pingu 2", "WG 3.OG li St0773r");
+  wifiMulti.addAP("Andromeda 5G", "24670463"); 
   digitalWrite(LED_BUILTIN, LOW);
 
   Serial.println("Connecting Wifi...");
