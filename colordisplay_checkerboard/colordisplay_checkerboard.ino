@@ -86,9 +86,13 @@ void setup(void) {
 
   int size = 4;
   delay(500);
-  for (int i=0; i<20; i=i+2){
+  for (int i=0; i<20; i=i+1){
     for (int j=0; j<40; j=j+2){
-      tft.fillRect(i*size, j*size, size, size, ST77XX_GREEN);
+      if (i%2 == 0){
+        tft.fillRect(i*size, (j+1)*size, size, size, ST77XX_GREEN);
+      }else{
+        tft.fillRect(i*size, j*size, size, size, ST77XX_GREEN);
+      }
     }
   }
   delay(500);
